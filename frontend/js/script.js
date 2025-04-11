@@ -75,7 +75,7 @@ const handleLogin = (event) =>{
     login.style.display = "none";
     chat.style.display = "flex";
 
-    webSocket = new WebSocket("wss://projeto-chat-mensagem.onrender.com:8080")
+    webSocket = new WebSocket("wss://projeto-chat-mensagem.onrender.com")
     webSocket.onmessage = processMessage;
 }
 
